@@ -31,6 +31,8 @@ public class Program {
             System.out.print("Check-Out date (DD/MM/AAAA): ");
             checkOut = sdf.parse(sc.next());
 
+            // solucao mais ou menos
+
             String error = reservation.updateDates(checkIn, checkOut);
             if (error != null){
                 System.out.println(error);
